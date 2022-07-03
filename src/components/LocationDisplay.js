@@ -1,10 +1,15 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import Navli from "./Navigation";
 
-const LocationDisplay = () => {
-  const location = useLocation();
+const LocationDisplay =()=>{
+    const location = useLocation('');
 
-  return <a data-testid="location-display">{location.pathname}</a>;
-};
+    return(
+        <>
+             <Navigation/>
+        </>
+    )
+}
 
 export default LocationDisplay;
