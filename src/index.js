@@ -8,4 +8,10 @@ function generateCodeFromObject(obj){
 module.exports=generateCodeFromObject;
 
 
-// ReactDOM.render(<App />, document.getElementById("root"));
+
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+ 
+    <App />
+ 
+);

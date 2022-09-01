@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react";
-import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
+import { BrowserRouter, Route , Routes } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
 import NotMatch from "./NotMatch";
@@ -9,17 +9,19 @@ import Navigation from "./Navigation";
 class App extends Component {
   render() {
     return (
-      <>
+      <><div id="main">
+        bbhkjkkhj
         <BrowserRouter>
-          <div id="main">
+          
             <Navigation />
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/*" component={NotMatch} />
-            </Switch>
-          </div>
+            <Routes>
+              <Route  path="/" element={Home} />
+              <Route  path="/about" element={About} />
+              <Route  path="*" element={NotMatch} />
+            </Routes>
+         
         </BrowserRouter>
+        </div>
       </>
     );
   }

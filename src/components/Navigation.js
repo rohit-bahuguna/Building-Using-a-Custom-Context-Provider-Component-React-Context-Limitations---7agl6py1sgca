@@ -12,7 +12,7 @@ const Navigation = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/notmatch">Other</Link>
+         
         </li>
       </ul>
     </div>
